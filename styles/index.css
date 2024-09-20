@@ -1,0 +1,61 @@
+/* General Styling */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1rem;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.nav-link {
+    list-style-type: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.title {
+    margin: 2rem;
+    text-align: center;
+}
+
+.title p {
+    font-size: 0.75rem;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.main-content section {
+    padding: 1rem;
+    border: 1px solid black;    
+}
