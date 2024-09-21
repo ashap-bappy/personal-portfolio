@@ -1,11 +1,14 @@
 /* General Styling */
-
 *,
 ::before,
 ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    border: 1px solid black;
 }
 
 header {
@@ -52,10 +55,55 @@ nav {
 .main-content {
     display: flex;
     justify-content: center;
-    padding: 2rem;
 }
 
 .main-content section {
-    padding: 1rem;
     border: 1px solid black;    
+}
+
+.projects,
+.education,
+.job-experience,
+.open-source-experience {
+    padding: 1rem;
+}
+
+.projects ul,
+.education ul{
+    list-style-type: none;
+}
+
+.open-source-experience {
+    border-top: 1px solid black;
+}
+
+.projects ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects ul li {
+    border: 1px solid black;
+}
+
+.review-articles {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.review-articles article {
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.reviews #reviews-heading {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
 }
