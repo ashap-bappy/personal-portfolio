@@ -61,7 +61,29 @@ nav {
     border: 1px solid black;    
 }
 
-.projects,
+.projects {
+    flex: 1 1 60%;
+}
+
+#projects-heading {
+    padding: 1rem;
+}
+
+.projects ul {
+    gap: 1re
+}
+
+.projects ul li {
+    border-bottom: 1px solid black;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.projects ul > :last-child {
+    border-bottom: none;
+}
+
 .education,
 .job-experience,
 .open-source-experience {
@@ -75,15 +97,6 @@ nav {
 
 .open-source-experience {
     border-top: 1px solid black;
-}
-
-.projects ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.projects ul li {
-    border: 1px solid black;
 }
 
 .review-articles {
