@@ -8,12 +8,12 @@
 }
 
 body {
-    border: 1px solid black;
+    padding: 0.5rem;
 }
 
-header {
+/* header {
     padding: 1rem;
-}
+} */
 
 img {
     width: 30px;
@@ -29,7 +29,7 @@ nav {
 .intro {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
 .nav-link {
@@ -58,11 +58,19 @@ nav {
 }
 
 .main-content section {
-    border: 1px solid black;    
+    border: 1px solid black;
 }
 
 .projects {
-    flex: 1 1 60%;
+    flex: 1 1 30%;
+}
+
+.experience {
+    flex: 1 1 40%;
+}
+
+.education {
+    flex: 1 1 30%;
 }
 
 #projects-heading {
@@ -70,7 +78,7 @@ nav {
 }
 
 .projects ul {
-    gap: 1re
+    gap: 1rem;
 }
 
 .projects ul li {
@@ -88,6 +96,10 @@ nav {
 .job-experience,
 .open-source-experience {
     padding: 1rem;
+}
+
+.top-margin {
+    margin-top: 1rem;
 }
 
 .projects ul,
@@ -108,6 +120,11 @@ nav {
 .review-articles article {
     border: 1px solid black;
     border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.review-articles article p {
+    margin-top: 0.5rem
 }
 
 .reviews #reviews-heading {
@@ -119,4 +136,29 @@ footer {
     padding: 1rem;
     margin-top: 3rem;
     text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .title {
+        font-size: 0.75rem;
+    }
+    
+    .main-content {
+        flex-direction: column;
+    }
+
+    #reviews-heading {
+        text-align: center;
+    }
+    .review-articles {
+        flex-direction: column;
+        align-items: center;
+    }
 }

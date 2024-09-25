@@ -1,0 +1,44 @@
+/* General Styling */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    list-style-type: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.main-content {
+    margin-top: 1rem;
+}
+
+.main-content article {
+    margin-top: 1rem;
+}
