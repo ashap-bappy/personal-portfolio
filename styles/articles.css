@@ -18,6 +18,14 @@ main {
     flex: 1;
 }
 
+main section {
+    margin-top: 1.5rem;
+}
+
+main section article {
+    margin-top: 1rem;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -40,14 +48,6 @@ footer {
     padding: 1rem;
     margin-top: 3rem;
     text-align: center;
-}
-
-.main-content {
-    margin-top: 1rem;
-}
-
-.main-content article {
-    margin-top: 1rem;
 }
 
 @media (max-width: 500px) {

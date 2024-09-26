@@ -7,17 +7,6 @@
     box-sizing: border-box;
 }
 
-body {
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex: 1;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -40,19 +29,4 @@ footer {
     padding: 1rem;
     margin-top: 3rem;
     text-align: center;
-}
-
-.main-content {
-    margin-top: 1rem;
-}
-
-.main-content article {
-    margin-top: 1rem;
-}
-
-@media (max-width: 500px) {
-    nav {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
 }
