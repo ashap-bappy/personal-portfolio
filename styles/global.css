@@ -1,0 +1,22 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column; 
+        gap: 0.5rem;
+    }
+}
